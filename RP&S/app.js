@@ -61,7 +61,7 @@ const game = () => { ///レクチャービデオ5か6で解説
     //Checking for a tie
     if (playerChoice === computerChoice) {
       winner.textContent = "It is a tie";
-      return;
+      return; ///このファンクションを終わらせる
     }
     //Check for Rock
     if (playerChoice === "rock") {
@@ -69,7 +69,7 @@ const game = () => { ///レクチャービデオ5か6で解説
         winner.textContent = "Player Wins";
         pScore++;
         updateScore();
-        return;
+        return;　///
       } else {
         winner.textContent = "Computer Wins";
         cScore++;
